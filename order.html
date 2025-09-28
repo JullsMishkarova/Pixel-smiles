@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Поръчка • Pixel Smiles</title>
+<meta content="Забавни дигитални карикатури и комикс портрети по снимка. Идеален подарък за всякакви поводи." name="description"/>
+<link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="assets/css/style.css" rel="stylesheet"/>
+<script defer="" src="assets/js/main.js"></script>
+</head>
+<body>
+<header class="container nav">
+<div class="brand">
+<img alt="Pixel Smiles logo" src="assets/img/logo.svg"/>
+<strong>Pixel Smiles</strong>
+</div>
+<nav class="menu">
+<a href="index.html">Начало</a>
+<a href="services.html">Услуги</a>
+<a href="pricing.html">Цени</a>
+<a class="cta" href="order.html">Поръчай</a>
+</nav>
+</header>
+<main class="container">
+<section class="section">
+<h2>Поръчка</h2>
+<p class="lead">Попълни формата, качи снимките и опиши стила. Ще ти върнем потвърждение по имейл.</p>
+<div class="grid cols-2">
+<form action="https://formspree.io/f/xyznzvqk" class="card form" enctype="multipart/form-data" id="orderForm" method="POST">
+<label>Име и фамилия
+        <input class="input" name="name" placeholder="Име и фамилия" required="" type="text"/>
+</label>
+<label>Имейл за контакт
+        <input class="input" name="email" placeholder="name@example.com" required="" type="email"/>
+</label>
+<label>Избери пакет
+        <select class="select" name="package" required="">
+<option value="Базов портрет">Базов портрет – 49 лв</option>
+<option value="Двойка">Двойка – 89 лв</option>
+<option value="Семеен портрет">Семеен портрет – 139 лв</option>
+<option value="Фирмен пакет">Фирмен пакет – от 199 лв</option>
+</select>
+</label>
+<label>Екстри (по избор)
+        <div style="display:grid;gap:6px;margin-top:6px">
+<label><input name="extra_faces" type="checkbox"/> Допълнително лице (+20 лв)</label>
+<label><input name="pet" type="checkbox"/> Домашен любимец (+25 лв)</label>
+<label><input name="detailed_bg" type="checkbox"/> Детайлен фон (+30 лв)</label>
+<label><input name="express" type="checkbox"/> Експрес до 48ч (+30%)</label>
+<label><input name="merch" type="checkbox"/> Мърч &amp; подаръци (чаши, тениски, постери и др.)</label></div>
+</label>
+<label>Стил и инструкции
+        <textarea class="textarea" name="notes" placeholder="Комикс смешен стил, любим цвят, фон, хоби елементи…"></textarea>
+</label>
+<label>Качи снимки (до 5)
+        <input accept="image/*" class="input" multiple="" name="photos" type="file"/>
+</label>
+<label>Мърч детайли (артикули, размери, бройки)<textarea class="textarea" name="merch_details" placeholder="Пример: 2 тениски (M,L), 1 чаша с семейната карикатура"></textarea></label><button class="btn primary" type="submit">Изпрати поръчка</button>
+<div class="small">* За да активираш формата, смени action URL с твоя Formspree/Backend адрес.</div>
+<div class="card" id="merch">
+<h3>Мърч / Подаръци (по избор)</h3>
+<div style="display:grid;gap:8px">
+<label><input name="merch_mug" type="checkbox"/> Чаша 330 мл</label>
+<label><input name="merch_shirt" type="checkbox"/> Тениска</label>
+<label><input name="merch_cap" type="checkbox"/> Шапка</label>
+<label><input name="merch_keychain" type="checkbox"/> Ключодържател</label>
+</div>
+<div class="grid cols-2" style="margin-top:8px">
+<label>Размер (тениска)
+      <select class="select" name="shirt_size">
+<option value="">—</option>
+<option>XS</option><option>S</option><option>M</option>
+<option>L</option><option>XL</option><option>XXL</option>
+</select>
+</label>
+<label>Цвят
+      <input class="input" name="color" placeholder="бял, черен, тъмносин…" type="text"/>
+</label>
+</div>
+<label>Количество (ако желаеш повече бройки)
+    <input class="input" min="1" name="qty" placeholder="1" step="1" type="number"/>
+</label>
+</div>
+</form>
+<div class="card">
+<h3>Какво да подготвиш?</h3>
+<ul>
+<li>Ясни снимки (добра светлина, фронтално лице).</li>
+<li>Кратки инструкции за стил, фон и детайли.</li>
+<li>Срок, ако имаш конкретна дата.</li>
+</ul>
+<h3>FAQ</h3>
+<p><strong>Срок?</strong> Обикновено 2–5 работни дни. Експрес до 48ч с +30%.</p>
+<p><strong>Формати?</strong> JPG/PNG във висока резолюция. Печат при заявка.</p>
+<p><strong>Корекции?</strong> 1 кръг е включен. Допълнителни — по договаряне.</p>
+</div>
+</div>
+</section>
+</main>
+<footer class="container footer">
+<div>© 2025 Pixel Smiles — Забавни карикатури по снимка. <a href="mailto:pixelartstudioeu@gmail.com">pixelartstudioeu@gmail.com</a></div>
+</footer>
+</body>
+</html>
